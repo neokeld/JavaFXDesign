@@ -12,7 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
 public class Item implements Initializable {
-
+	
 	@FXML
 	private HBox itemC;
 	
@@ -33,9 +33,10 @@ public class Item implements Initializable {
     
     public void handleClick() {
     	BigFileTask bft = new BigFileTask(1000000);
-    	bft.setOnSucceeded(e -> 
-        	btnActive.setStyle("-fx-background-color : #00C781; -fx-border-color: transparent;")
-        );
+    	bft.setOnSucceeded(e -> {
+        	btnActive.setStyle("-fx-background-color : #6FFFB0; -fx-border-color: transparent; -fx-text-fill : #000000;");
+        	btnActive.setText("ordered");
+    	});
     	exec.execute(bft);
     }
 

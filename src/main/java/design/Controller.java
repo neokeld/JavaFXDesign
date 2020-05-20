@@ -15,8 +15,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Controller implements Initializable {
 
+    private static final Logger logger = LoggerFactory.getLogger(Controller.class);
+	
     @FXML
     private VBox pnItems = null;
     @FXML
@@ -82,7 +87,7 @@ public class Controller implements Initializable {
                 
                 pnItems.getChildren().add(nodes[i]);
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error("Error creating items: {}", e);
             }
         }
 

@@ -12,7 +12,7 @@
     <children>
         <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@./images/icons8_GPS_Antenna_64px_1.png" />
+                <Image url="@./images/fork_64px_green.png" />
             </image>
             <HBox.margin>
                 <Insets left="10.0" />
@@ -34,7 +34,7 @@
                 <Insets />
             </HBox.margin>
         </Label>
-        <Button fx:id="btnActive" mnemonicParsing="false" onAction="#handleClick" prefHeight="10.0" prefWidth="60.0" stylesheets="@style.css" text="active">
+        <Button fx:id="btnActive" mnemonicParsing="false" onAction="#handleClick" prefHeight="10.0" prefWidth="68.0" stylesheets="@style.css" text="order">
             <HBox.margin>
                 <Insets />
             </HBox.margin>

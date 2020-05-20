@@ -1,5 +1,8 @@
 package design.task;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javafx.concurrent.Task;
 
 /**
@@ -9,6 +12,8 @@ import javafx.concurrent.Task;
  *
  */
 public class BigFileTask extends Task<Integer> {
+	private static final Logger logger = LoggerFactory.getLogger(BigFileTask.class);
+	
 	private final int totalIterations;
 	
 	/**
@@ -21,6 +26,7 @@ public class BigFileTask extends Task<Integer> {
 	
 	@Override
 	protected Integer call() throws Exception {
+		logger.debug("task called");
         int iteration;
         // A Simple Loop With Progress Notification
         for (iteration = 0; iteration < totalIterations; iteration++) {
@@ -37,6 +43,7 @@ public class BigFileTask extends Task<Integer> {
     @Override protected void succeeded() {
         super.succeeded();
         updateMessage("Big File Processed!");
+        logger.debug("task succeeded");
     }
     
     @Override protected void failed() {

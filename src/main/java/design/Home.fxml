@@ -230,7 +230,7 @@
             </Pane>
          </children>
       </StackPane>
-      <Button fx:id="btnCloseWindow" layoutX="1024.0" layoutY="4.0" mnemonicParsing="false" onAction="#handleCloseWindow" prefHeight="20.0" prefWidth="21.0" style="-fx-border-color: transparent; -fx-background-color: transparent;" stylesheets="@style.css" text="X">
+      <Button fx:id="btnCloseWindow" layoutX="1021.0" layoutY="4.0" mnemonicParsing="false" onAction="#handleCloseWindow" prefHeight="20.0" prefWidth="21.0" stylesheets="@style.css" text="X">
             <HBox.margin>
                 <Insets />
             </HBox.margin>

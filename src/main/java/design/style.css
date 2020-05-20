@@ -11,6 +11,28 @@
   -fx-background-color : #1620A1;
 }
 
+#btnCloseWindow {
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+}
+#btnCloseWindow:hover {
+  -fx-background-color : #7D4CDB;
+}
+#btnCloseWindow:pressed {
+  -fx-background-color : #FF4040;
+}
+
+#btnActive {
+  -fx-border-color: #2A73FF;
+  -fx-border-radius: 20;
+  -fx-background-color: transparent;
+}
+#btnActive:hover {
+  -fx-border-color: #7D4CDB;
+  -fx-text-fill : #7D4CDB;
+}
+
 .scroll-pane {
   -fx-background-color: #02030A;
 }

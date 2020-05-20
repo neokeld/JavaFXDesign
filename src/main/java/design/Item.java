@@ -34,7 +34,7 @@ public class Item implements Initializable {
     public void handleClick() {
     	BigFileTask bft = new BigFileTask(1000000);
     	bft.setOnSucceeded(e -> 
-        	btnActive.setStyle("-fx-background-color : #00C781")
+        	btnActive.setStyle("-fx-background-color : #00C781; -fx-border-color: transparent;")
         );
     	exec.execute(bft);
     }

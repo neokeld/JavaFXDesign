@@ -34,7 +34,7 @@
                 <Insets />
             </HBox.margin>
         </Label>
-        <Button fx:id="btnActive" mnemonicParsing="false" onAction="#handleClick" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="active">
+        <Button fx:id="btnActive" mnemonicParsing="false" onAction="#handleClick" prefHeight="10.0" prefWidth="60.0" stylesheets="@style.css" text="active">
             <HBox.margin>
                 <Insets />
             </HBox.margin>

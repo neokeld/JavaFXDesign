@@ -8,6 +8,7 @@ This project is :
 * with borderless window
 * drag and drop of the window
 * a window close button
+* change color on hovering over the buttons
 * an example of a JavaFX background Task
 
 ![](https://github.com/neokeld/JavaFXDesign/blob/master/readme-assets/1.png)

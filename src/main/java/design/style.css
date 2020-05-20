@@ -1,20 +1,17 @@
-.button
-{
-  -fx-background-color : #7D4CDB;
+.button {
+  -fx-background-color: transparent;
   -fx-text-fill : #e7e5e5;
 }
-.button:hover{
+.button:hover {
   -fx-background-color : #10165F;
+  -fx-background-radius: 0em;
 }
-.button:pressed
-{
+.button:pressed {
   -fx-background-color : #1620A1;
 }
 
 #btnCloseWindow {
   -fx-border-color: transparent;
-  -fx-background-color: transparent;
-  -fx-background-radius: 0em;
 }
 #btnCloseWindow:hover {
   -fx-background-color : #7D4CDB;
@@ -26,11 +23,11 @@
 #btnActive {
   -fx-border-color: #2A73FF;
   -fx-border-radius: 20;
-  -fx-background-color: transparent;
 }
 #btnActive:hover {
   -fx-border-color: #7D4CDB;
   -fx-text-fill : #7D4CDB;
+  -fx-background-color: transparent;
 }
 
 .scroll-pane {

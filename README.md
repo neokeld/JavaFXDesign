@@ -6,7 +6,7 @@ This project is :
 * Maven + JavaFX + Openjdk 12 + Eclipse
 * an example with custom css
 * with borderless window
-* drag and drop of the window
+* resize and drag and drop of the window
 * a window close button
 * change color on hovering over the buttons
 * an example of a JavaFX background Task

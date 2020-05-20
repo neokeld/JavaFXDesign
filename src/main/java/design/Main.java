@@ -2,6 +2,7 @@ package design;
 
 import java.io.IOException;
 
+import design.resize.ResizeHelper;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,8 +11,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
-    private double x;
-    private double y;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -19,16 +18,9 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         //set stage borderless
         primaryStage.initStyle(StageStyle.UNDECORATED);
-
-        //window drag and drop
-        root.setOnMousePressed(event -> {
-            x = event.getSceneX();
-            y = event.getSceneY();
-        });
-        root.setOnMouseDragged(event -> {
-            primaryStage.setX(event.getScreenX() - x);
-            primaryStage.setY(event.getScreenY() - y);
-        });
+        
+        //window resize and drag and drop
+        ResizeHelper.addResizeListener(primaryStage, 4);
         
         primaryStage.show();
     }

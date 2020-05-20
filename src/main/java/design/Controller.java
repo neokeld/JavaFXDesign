@@ -1,5 +1,6 @@
 package design;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -59,6 +60,9 @@ public class Controller implements Initializable {
     
     @FXML
     private Pane pnlSignout;
+    
+    @FXML
+    private Button btnCloseWindow;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -118,5 +122,9 @@ public class Controller implements Initializable {
         	pnlSignout.setStyle("-fx-background-color : #FF4040");
         	pnlSignout.toFront();
         }
+    }
+    
+    public void handleCloseWindow() {
+    	Platform.exit();
     }
 }

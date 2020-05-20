@@ -125,13 +125,13 @@
       </VBox>
       <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
          <children>
-            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlPackages" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlSettings" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlSignout" prefHeight="200.0" prefWidth="200.0" />
-            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #1620A1" />
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #53639F" />
+            <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #A2423D" />
+            <Pane fx:id="pnlPackages" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #6FFFB0" />
+            <Pane fx:id="pnlSettings" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #3D138D" />
+            <Pane fx:id="pnlSignout" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color : #FF4040" />
+            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color : #02030A">
                <children>
                   <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: #B7C3D7" />
                   <Label layoutX="57.0" layoutY="25.0" text="Deliverat Orders" textFill="#e7e5e5">

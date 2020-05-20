@@ -78,11 +78,9 @@ public class ResizeHelper {
 
             final double mouseEventX = mouseEvent.getSceneX();
             final double mouseEventY = mouseEvent.getSceneY();
-            final double sceneWidth = scene.getWidth();
-            final double sceneHeight = scene.getHeight();
 
             if (MouseEvent.MOUSE_MOVED.equals(mouseEventType)) {
-                updateCursorKind(scene, mouseEventX, mouseEventY, sceneWidth, sceneHeight);
+                updateCursorKind(scene, mouseEventX, mouseEventY);
             } else if (MouseEvent.MOUSE_EXITED.equals(mouseEventType) || MouseEvent.MOUSE_EXITED_TARGET.equals(mouseEventType)) {
                 scene.setCursor(Cursor.DEFAULT);
             } else if (MouseEvent.MOUSE_PRESSED.equals(mouseEventType)) {
@@ -94,12 +92,7 @@ public class ResizeHelper {
 
 		private void onDrop(MouseEvent mouseEvent, final double mouseEventX, final double mouseEventY) {
 			if (!Cursor.DEFAULT.equals(cursorEvent)) {
-			    if (!Cursor.W_RESIZE.equals(cursorEvent) && !Cursor.E_RESIZE.equals(cursorEvent)) {
-			        verticalResize(mouseEvent, mouseEventY);
-			    }
-			    if (!Cursor.N_RESIZE.equals(cursorEvent) && !Cursor.S_RESIZE.equals(cursorEvent)) {
-			        horizontalResize(mouseEvent, mouseEventX);
-			    }
+			    resizeWindow(mouseEvent, mouseEventX, mouseEventY);
 			} else if (mouseEvent.getSceneY() < 70) {
 			    moveStage(mouseEvent);
 			}
@@ -109,9 +102,19 @@ public class ResizeHelper {
 			stage.setX(mouseEvent.getScreenX() - xOffset);
 			stage.setY(mouseEvent.getScreenY() - yOffset);
 		}
+		
+		private void resizeWindow(MouseEvent mouseEvent, final double mouseEventX, final double mouseEventY) {
+			if (!Cursor.W_RESIZE.equals(cursorEvent) && !Cursor.E_RESIZE.equals(cursorEvent)) {
+			    verticalResize(mouseEvent, mouseEventY);
+			}
+			if (!Cursor.N_RESIZE.equals(cursorEvent) && !Cursor.S_RESIZE.equals(cursorEvent)) {
+			    horizontalResize(mouseEvent, mouseEventX);
+			}
+		}
 
-		private void updateCursorKind(Scene scene, double mouseEventX, double mouseEventY, double sceneWidth,
-				double sceneHeight) {
+		private void updateCursorKind(Scene scene, double mouseEventX, double mouseEventY) {
+            final double sceneWidth = scene.getWidth();
+            final double sceneHeight = scene.getHeight();
 			if (mouseEventX < borderSize && mouseEventY < borderSize) {
 			    cursorEvent = Cursor.NW_RESIZE;
 			} else if (mouseEventX < borderSize && mouseEventY > sceneHeight - borderSize) {

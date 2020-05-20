@@ -100,31 +100,18 @@ public class Controller implements Initializable {
     
     public void handleClicks(ActionEvent actionEvent) {
         if (actionEvent.getSource() == btnCustomers) {
-            pnlCustomer.setStyle("-fx-background-color : #1620A1");
             pnlCustomer.toFront();
-        }
-        if (actionEvent.getSource() == btnMenus) {
-            pnlMenus.setStyle("-fx-background-color : #53639F");
+        } else if (actionEvent.getSource() == btnMenus) {
             pnlMenus.toFront();
-        }
-        if (actionEvent.getSource() == btnOrders) {
-            pnlOrders.setStyle("-fx-background-color : #A2423D");
+        } else if (actionEvent.getSource() == btnOrders) {
             pnlOrders.toFront();
-        }
-        if (actionEvent.getSource() == btnOverview) {
-            pnlOverview.setStyle("-fx-background-color : #02030A");
+        } else if (actionEvent.getSource() == btnOverview) {
             pnlOverview.toFront();
-        }
-        if (actionEvent.getSource() == btnPackages) {
-        	pnlPackages.setStyle("-fx-background-color : #6FFFB0");
+        } else if (actionEvent.getSource() == btnPackages) {
         	pnlPackages.toFront();
-        }
-        if (actionEvent.getSource() == btnSettings) {
-        	pnlSettings.setStyle("-fx-background-color : #3D138D");
+        } else if (actionEvent.getSource() == btnSettings) {
         	pnlSettings.toFront();
-        }
-        if (actionEvent.getSource() == btnSignout) {
-        	pnlSignout.setStyle("-fx-background-color : #FF4040");
+        } else if (actionEvent.getSource() == btnSignout) {
         	pnlSignout.toFront();
         }
     }

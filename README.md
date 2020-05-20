@@ -14,6 +14,8 @@ This project is :
 
 ![](https://github.com/neokeld/JavaFXDesign/blob/master/readme-assets/1.png)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/1e63a93766b5069c08a6/maintainability)](https://codeclimate.com/github/neokeld/JavaFXDesign/maintainability) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+
 This project is also :
 * a fiction with a delivery management company Deliverat
 * featuring [Maïté](https://fr.wikipedia.org/wiki/Ma%C3%AFt%C3%A9)

@@ -52,24 +52,26 @@ public class CursorPos {
 	}
 
 	public Cursor getCursorKind() {
+		Cursor cursor;
 		if (this.nw()) {
-		    return Cursor.NW_RESIZE;
+		    cursor = Cursor.NW_RESIZE;
 		} else if (this.sw()) {
-		    return Cursor.SW_RESIZE;
+			cursor = Cursor.SW_RESIZE;
 		} else if (this.ne()) {
-		    return Cursor.NE_RESIZE;
+			cursor = Cursor.NE_RESIZE;
 		} else if (this.se()) {
-		    return Cursor.SE_RESIZE;
+			cursor = Cursor.SE_RESIZE;
 		} else if (this.w()) {
-		    return Cursor.W_RESIZE;
+			cursor = Cursor.W_RESIZE;
 		} else if (this.e()) {
-		    return Cursor.E_RESIZE;
+			cursor = Cursor.E_RESIZE;
 		} else if (this.n()) {
-		    return Cursor.N_RESIZE;
+			cursor = Cursor.N_RESIZE;
 		} else if (this.s()) {
-		    return Cursor.S_RESIZE;
+			cursor = Cursor.S_RESIZE;
 		} else {
-		    return Cursor.DEFAULT;
+			cursor = Cursor.DEFAULT;
 		}
+		return cursor;
 	}
 }
